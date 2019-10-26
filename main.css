@@ -1,0 +1,56 @@
+/* NAVBAR */ 
+.nav-logo {
+    color: lime;
+}
+
+/* GENDER SELECTION */
+.male-selection {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    color: #f5f5f5;
+}
+
+.male-selection:hover {
+    background-color: #f5f5f5 !important;
+    color: #363636;
+    border-style: solid;
+    border-color: blue;
+    border-width: 3px;
+}
+
+.female-selection {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: #363636;
+}
+
+.female-selection:hover {
+    background-color: #363636 !important; 
+    color: #f5f5f5;
+    border-style: solid;
+    border-color: red;
+    border-width: 3px;
+}
+
+.fa-male {
+    padding-left: 50%;
+    padding-top: 33%;
+    
+}
+
+.fa-female {
+    padding-left: 33%;
+    padding-top: 33%; 
+    
+}
+
+/* AGE FORM */
+
+.age-form {
+    visibility: hidden;
+}
+
+.age-error {
+    visibility: hidden;
+    height: 0;
+}

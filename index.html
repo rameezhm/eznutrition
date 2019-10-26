@@ -8,11 +8,84 @@
 
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="bulma.css">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/433720a2b0.js" crossorigin="anonymous"></script>
     <!-- Our CSS -->
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <!--NAVBAR -->
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!-- Insert Logo Below -->
+            <a href="#">
+                <i class="fas fa-seedling fa-3x nav-logo">EZ</i>
+            </a>
+            <!--Burger Menu For Mobile -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--GENDER SELECTION -->
+    <section id="genderSelector" class="section">
+        <div class="container">
+            <div id="gender-selector" class="columns is-gapless is-mobile is-centered">
+                <div id="maleSelection" class="column is-one-quarter has-background-dark male-selection"
+                    onclick="mClick()">
+                    <i id="maleIcon" class="fas fa-male"></i>
+                </div>
+                <div id="femaleSelection" class="column is-one-quarter has-background-light female-selection"
+                    onclick="fClick()">
+                    <i id="femaleIcon" class="fas fa-female"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGE FORM -->
+    <section id="ageForm" class="section age-form">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-one-third has-text-centered">
+                    <div class="content">
+                        <h1>Enter Your Age</h1>
+                        <div id="ageError" class="age-error has-text-danger">Error: Invalid Age. Please Re-enter a valid age</div>
+                    </div>
+                    <div class="columns is-gapless is-mobile is-centered">
+                        <div class="column is-one-third">
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <input id="ageInput" class="input" type="text" placeholder="Age">
+                                </div>
+                                <div class="control">
+                                    <button id="ageButton" class="button is-link" onclick="getAge()">Go</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUTRITIONAL DATA -->
+    <section class="section">
+
+    </section>
+
 
 
     <script type="text/javascript" src="main.js"></script>
