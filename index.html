@@ -82,8 +82,39 @@
     </section>
 
     <!-- NUTRITIONAL DATA -->
-    <section class="section">
+    <section id="dailyNutrition" class="section daily-nutrition nutrition">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h1>Your Daily Nutrition</h1>
+                        <button onclick="window.location.href='#pSection'" class="button is-large is-fullwidth">Potassium</button>
+                        <button class="button is-large is-fullwidth">Protein</button>
+                        <button class="button is-large is-fullwidth">Vitamin D</button>
+                        <button class="button is-large is-fullwidth">Calcium</button>
+                        <button class="button is-large is-fullwidth">Fiber</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <section id="pSection" class="section potassium nutrition">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h1>Your Daily Reccomended Dose of Potassium</h1>
+                        <h3 id="potassiumAmount"></h3>
+                        <h2>Some Foods That Contain Lots of Potassium</h2>
+                        <ul id="potassiumFoodList">
+                        </ul>
+                    </div>
+                    <button onclick="window.location.href='#dailyNutrition'" class="button is-normal">Back to Nutrients</button>
+                </div>
+            </div>
+        </div>
     </section>
 
 

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* NAVBAR */ 
 .nav-logo {
     color: lime;
@@ -53,4 +57,9 @@
 .age-error {
     visibility: hidden;
     height: 0;
+}
+
+/* NUTRITION */
+.nutrition {
+    visibility: hidden;
 }
