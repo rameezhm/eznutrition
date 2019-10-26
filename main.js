@@ -96,6 +96,8 @@ let presentData = function() {
     dailyNutrition.style.visibility = "visible";
     window.location.href='#dailyNutrition';
     populatePotassium();
+    populateProtein();
+    populatevitaminD();
 }
 
 let populatePotassium = function() {
@@ -106,6 +108,29 @@ let populatePotassium = function() {
     }
 }
 
+let populateProtein = function() {
+    proteinSection.style.visibility = "visible";
+    document.getElementById('proteinAmount').innerHTML = protein[group-1] + " g";
+    for ( let i = 0; i < proteinFoods.length; i++) {
+        document.getElementById('proteinFoodList').innerHTML += "<li>" + proteinFoods[i] + "</li>";
+    }
+}
+
+let populatevitaminD = function() {
+    vitaminDSection.style.visibility = "visible";
+    document.getElementById('vitaminDAmount').innerHTML = vitaminD[group-1] + " g";
+    for ( let i = 0; i < vitaminDFoods.length; i++) {
+        document.getElementById('vitaminDFoodList').innerHTML += "<li>" + vitaminDFoods[i] + "</li>";
+    }
+}
+
+let populatefiber = function() {
+    fiberSection.style.visibility = "visible";
+    document.getElementById('fiberAmount').innerHTML = fiber[group-1] + " g";
+    for ( let i = 0; i < fiberFoods.length; i++) {
+        document.getElementById('fiberFoodList').innerHTML += "<li>" + fiberFoods[i] + "</li>";
+    }
+}
 
 
 let bounded = function(x, y) {
@@ -122,9 +147,14 @@ let potassium = ["3,000","3,800","3,800","4,500","4,500","4,700","4,700","4,700"
 let vitd = [600,600,600,600,600,600,600,600,600,600,600,600,600];
 let calcium = ["700","1,000","1,000","1,300","1,300","1,300","1,300","1,000","1,000","1,000","1,000","1,200","1,000"];
 let iron = [7,10,10,8,8,15,11,18,8,18,8,8,8];
+let fiber = [];
 
 let calciumFoods = ["Fortified ready-to-eat cereals (various)","Pasteurized processed American cheese","Parmesan cheese hard","Plain yogurt nonfat","Romano cheese","Almond milk (all flavors)","Pasteurized processed Swiss cheese","Tofu raw regular prepared with calcium sulfate","Gruyere cheese","Plain yogurt low-fat","Vanilla yogurt low-fat","Pasteurized processed American cheese food","Fruit yogurt low-fat","Orange juice calcium fortified","Soymilk (all flavors)","Ricotta cheese part skim","Swiss cheese","Evaporated milk","Sardines canned in oil drained","Provolone cheese","Monterey cheese","Mustard spinach (tendergreen) raw","Muenster cheese","Low-fat milk (1%)","Mozzarella cheese part-skim","Skim milk (nonfat)","Reduced fat milk (2%)","Colby cheese","Low-fat chocolate milk (1%)","Cheddar cheese","Rice drink","Whole buttermilk","Whole chocolate milk","Whole milk","Reduced fat chocolate milk (2%)","Ricotta cheese whole milk"];
 let potassiumFoods = ["Potato baked flesh and skin","Prune juice canned","Carrot juice canned","Passion-fruit juice yellow or purple","Tomato paste canned","Beet greens cooked from fresh","Adzuki beans cooked","White beans canned","Plain yogurt nonfat","Tomato puree","Sweet potato baked in skin","Salmon Atlantic wild cooked","Clams canned","Pomegranate juice","Plain yogurt low-fat","Tomato juice canned","Orange juice fresh","Soybeans green cooked","Chard swiss cooked","Lima beans cooked","Mackerel various types cooked","Vegetable juice canned","Chili with beans canned","Great northern beans canned","Yam cooked","Halibut cooked","Tuna yellowfin cooked","Acorn squash cooked","Snapper cooked","Soybeans mature cooked","Tangerine juice fresh","Pink beans cooked","Chocolate milk (1% 2% and whole)","Amaranth leaves cooked","Banana","Spinach cooked from fresh or canned","Black turtle beans cooked","Peaches dried uncooked","Prunes stewed","Rockfish Pacific cooked","Rainbow trout wild or farmed cooked","Skim milk (nonfat)","Refried beans canned traditional","Apricots dried uncooked","Pinto beans cooked","Lentils cooked","Avocado","Tomato sauce canned","Plantains slices cooked","Kidney beans cooked","Navy beans cooked"];
+let proteinFoods = [];
+let vitaminDFoods = [];
+let fiberFoods = [];
+
 
 let nutritionCategories = ["Protein", "Potassium", "Vitamin D", "Calcium", "Iron"];
 
