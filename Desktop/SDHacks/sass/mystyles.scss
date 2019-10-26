@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+html {
+	scroll-behavior: smooth;
+	background-color: #6d92c7;
+}
+
+.hero-head {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.navbar-item:hover {
+	background-color: #dae4f5;
+}
+
+.hero.is-info a.navbar-item:hover, .hero.is-info a.navbar-item.is-active, .hero.is-info .navbar-link:hover, .hero.is-info .navbar-link.is-active {
+	background-color: #dae4f5;
+}
+
+
