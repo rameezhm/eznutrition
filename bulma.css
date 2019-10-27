@@ -6734,7 +6734,7 @@ a.list-item {
   .navbar.is-link .navbar-start .navbar-link,
   .navbar.is-link .navbar-end > .navbar-item,
   .navbar.is-link .navbar-end .navbar-link {
-    color: #fff;
+    color: #000000;
   }
   .navbar.is-link .navbar-start > a.navbar-item:focus, .navbar.is-link .navbar-start > a.navbar-item:hover, .navbar.is-link .navbar-start > a.navbar-item.is-active,
   .navbar.is-link .navbar-start .navbar-link:focus,
@@ -6746,8 +6746,8 @@ a.list-item {
   .navbar.is-link .navbar-end .navbar-link:focus,
   .navbar.is-link .navbar-end .navbar-link:hover,
   .navbar.is-link .navbar-end .navbar-link.is-active {
-    background-color: #2366d1;
-    color: #fff;
+    background-color:  #6d92c7;
+    color: #000000;
   }
   .navbar.is-link .navbar-start .navbar-link::after,
   .navbar.is-link .navbar-end .navbar-link::after {
