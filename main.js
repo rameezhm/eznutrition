@@ -1,30 +1,11 @@
-// correctly size gender selector height
-let resizeSelector = function() {
-
-    let radius = maleSelection.getBoundingClientRect().width;
-    //resize height relative to width
-    maleSelection.style.height = radius +"px";
-    femaleSelection.style.height = radius +"px";
-    //resize icons
-    maleIcon.style.fontSize = radius * 0.333 +"px";
-    femaleIcon.style.fontSize = radius * 0.333 +"px";
-}
-//runs the sizing function when the page loads
-resizeSelector();
-
-//resizes the selector whenever the page is resized
-onresize = function() {
-    resizeSelector();
-}
-
 //track if both demographic info have been entered
-let ageEntered = false;
-let genderEntered = false;
+var ageEntered = false;
+var genderEntered = false;
 
 //functions to handle gender select click
 //track selected gender
-let gender = "none";
-function getAge(g) {
+var gender = "none";
+function getGender(g) {
     gender = g;
     console.log("Entered Gender " + g);
     genderEntered = true;
@@ -32,7 +13,7 @@ function getAge(g) {
 }
 
 //get users age
-let age = -1;
+var age = -1;
 function getAge(a) {
     age = a;
     console.log("Entered Age " + a);
@@ -41,7 +22,7 @@ function getAge(a) {
 }
 
 //checks if both demographic info was entered upon either button click
-let checkBothDemoInputs = function() {
+function checkBothDemoInputs() {
     if (genderEntered && ageEntered) {
         presentData();
     }
@@ -143,7 +124,7 @@ let bounded = function(x, y) {
 //ordered in corresponding group numbers, starting with 1
 let protein = [13,19,19,34,34,46,52,46,56,46,56,46,56]; //g of protien per day
 let potassium = ["3,000","3,800","3,800","4,500","4,500","4,700","4,700","4,700","4,700","4,700","4,700","4,700","4,700"]; //mg
-let vitd = [600,600,600,600,600,600,600,600,600,600,600,600,600];
+let vitaminD = [600,600,600,600,600,600,600,600,600,600,600,600,600];
 let calcium = ["700","1,000","1,000","1,300","1,300","1,300","1,300","1,000","1,000","1,000","1,000","1,200","1,000"];
 let iron = [7,10,10,8,8,15,11,18,8,18,8,8,8];
 let fiber = [];
