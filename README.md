@@ -12,3 +12,6 @@ We compiled our information from (source), (source), and (source).
 
 <h3>If this information is already online, why make a website at all?</h3>
 We found that finding basic health information is actually quite time consuming and confusing due to the sheer amount of information available as well as other factors. Articles conflict so it can be difficult to find reputable sources. Even with reputable studies, data can be cluttered so it can become troublesome to find the relevant information pertaining to you, or even to simply understand with medical jargon. To help remedy this, we sorted data and information to be more specific and easier to read for individuals.
+
+
+<a href="https://docs.google.com/presentation/d/1DI1kaNq6AmGxDPtD5bk7VADngNxZDcuLqj_urH_6rQw/edit?usp=sharing">link to google slides presentation</a>
