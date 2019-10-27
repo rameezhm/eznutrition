@@ -155,7 +155,7 @@ let populatecalorie = function() {
     calorieSection.style.visibility = "visible";
     document.getElementById('calorieAmount').innerHTML = calorie[group-1] + " g";
     for ( let i = 0; i < calorieFoods.length; i++) {
-        document.getElementById('ccalorieFoodList').innerHTML += "<li>" + calorieFoods[i] + "</li>";
+        document.getElementById('calorieFoodList').innerHTML += "<li>" + calorieFoods[i] + "</li>";
     }
 }
 //create the rest of the populate functions(just copy paste and replace vitamin name with new name)
@@ -174,21 +174,24 @@ let bounded = function(x, y) {
 //just copy rows of vitamin from excel sheet
 let protein = [13,19,19,34,34,46,52,46,56,46,56,46,56]; //g of protien per day
 let potassium = ["3,000","3,800","3,800","4,500","4,500","4,700","4,700","4,700","4,700","4,700","4,700","4,700","4,700"]; //mg
+let vitaminA = [300,400,400,600,600,700,900,700,900,700,900,700,900];
+let vitaminC = [15,25,25,45,45,65,75,75,90,75,90,75,90];
 let vitaminD = [600,600,600,600,600,600,600,600,600,600,600,600,600];
 let calcium = ["700","1,000","1,000","1,300","1,300","1,300","1,300","1,000","1,000","1,000","1,000","1,200","1,000"];
 let iron = [7,10,10,8,8,15,11,18,8,18,8,8,8];
 let fiber = [14,15,16,17,18,19,20,21,22,23,24,25,26];
 
 //put a few example foods
-let ironFoods = ["Spinach", "Tofu", "Broccoli"]
 
 let potassiumFoods = ["Potato baked flesh and skin","Prune juice canned","Carrot juice canned","Passion-fruit juice yellow or purple","Tomato paste canned","Beet greens cooked from fresh","Adzuki beans cooked","White beans canned","Plain yogurt nonfat","Tomato puree","Sweet potato baked in skin","Salmon Atlantic wild cooked","Clams canned","Pomegranate juice","Plain yogurt low-fat","Tomato juice canned","Orange juice fresh","Soybeans green cooked","Chard swiss cooked","Lima beans cooked","Mackerel various types cooked","Vegetable juice canned","Chili with beans canned","Great northern beans canned","Yam cooked","Halibut cooked","Tuna yellowfin cooked","Acorn squash cooked","Snapper cooked","Soybeans mature cooked","Tangerine juice fresh","Pink beans cooked","Chocolate milk (1% 2% and whole)","Amaranth leaves cooked","Banana","Spinach cooked from fresh or canned","Black turtle beans cooked","Peaches dried uncooked","Prunes stewed","Rockfish Pacific cooked","Rainbow trout wild or farmed cooked","Skim milk (nonfat)","Refried beans canned traditional","Apricots dried uncooked","Pinto beans cooked","Lentils cooked","Avocado","Tomato sauce canned","Plantains slices cooked","Kidney beans cooked","Navy beans cooked"];
 //let proteinFoods = [];
+let vitaminAFoods = ["Carrots", "Spinach", "Sweet Potato"];
+let vitaminCFoods = ["Oranges", "Lemons", "Strawberries", "Pineapples", "Kiwi", "Mango"];
 let vitaminDFoods = ["Salmon, sockeye, canned",  "Trout, rainbow, farmed, cooked",  "Salmon, chinook, smoked",  "Swordfish, cooked",  "Sturgeon, mixed species, smoked",  "Salmon, pink, canned",  "Fish oil, cod liver",  "Cisco, smoked",  "Salmon, sockeye, cooked",  "Salmon, pink, cooked",  "Sturgeon, mixed species, cooked",  "Whitefish, mixed species, smoked",  "Mackerel, Pacific and jack, cooked",  "Salmon, coho, wild, cooked",  "Mushrooms, portabella, Exposed to Ultraviolet Light, grilled",  "Tuna, light, canned in oil, drained",  "Halibut, Atlantic and Pacific, cooked",  "Herring, Atlantic, cooked",  "Sardine, canned in oil, drained",  "Rockfish, Pacific, mixed species, cooked",  "Whole milk",  "Whole chocolate milk",  "Tilapia, cooked",  "Flatfish (flounder and sole), cooked",  "Reduced fat chocolate milk (2%)",  "Yogurt (various types and flavors)",  "Milk (non-fat, 1% and 2%)",  "Soymilk",  "Low-fat chocolate milk (1%)",  "Fortified ready-to-eat cereals (various)",  "Orange juice, fortified",  "Almond milk (all flavors)",  "Rice drink",  "Pork, cooked (various cuts)",  "Mushrooms, morel, raw",  "Margarine (various)",  "Mushrooms, Chanterelle, raw",  "Egg, hard-boiled",  ];
 let calciumFoods = ["Fortified ready-to-eat cereals (various)","Pasteurized processed American cheese","Parmesan cheese hard","Plain yogurt nonfat","Romano cheese","Almond milk (all flavors)","Pasteurized processed Swiss cheese","Tofu raw regular prepared with calcium sulfate","Gruyere cheese","Plain yogurt low-fat","Vanilla yogurt low-fat","Pasteurized processed American cheese food","Fruit yogurt low-fat","Orange juice calcium fortified","Soymilk (all flavors)","Ricotta cheese part skim","Swiss cheese","Evaporated milk","Sardines canned in oil drained","Provolone cheese","Monterey cheese","Mustard spinach (tendergreen) raw","Muenster cheese","Low-fat milk (1%)","Mozzarella cheese part-skim","Skim milk (nonfat)","Reduced fat milk (2%)","Colby cheese","Low-fat chocolate milk (1%)","Cheddar cheese","Rice drink","Whole buttermilk","Whole chocolate milk","Whole milk","Reduced fat chocolate milk (2%)","Ricotta cheese whole milk"];
 let fiberFoods = ["High fiber bran ready-to-eat cereal",  "Navy beans, cooked",  "Small white beans, cooked",  "Yellow beans, cooked",  "Shredded wheat ready-to-eat cereal (various)",  "Cranberry (roman) beans, cooked",  "Adzuki beans, cooked",  "French beans, cooked",  "Split peas, cooked",  "Chickpeas, canned",  "Lentils, cooked",  "Pinto beans, cooked",  "Black turtle beans, cooked",  "Mung beans, cooked",  "Black beans, cooked",  "Artichoke, globe or French, cooked",  "Lima beans, cooked",  "Great northern beans, canned",  "White beans, canned",  "Kidney beans, all types, cooked",  "Pigeon peas, cooked",  "Cowpeas, cooked",  "Wheat bran flakes ready-to-eat cereal (various)",  "Pear, raw",  "Pumpkin seeds, whole, roasted",  "Baked beans, canned, plain",  "Soybeans, cooked",  "Plain rye wafer crackers",  "Avocado",  "Broadbeans (fava beans), cooked",  "Pink beans, cooked",  "Apple, with skin",  "Green peas, cooked (fresh, frozen, canned)",  "Refried beans, canned",  "Chia seeds, dried",  "Bulgur, cooked",  "Mixed vegetables, cooked from frozen",  "Raspberries",  "Blackberries",  "Collards, cooked",  "Soybeans, green, cooked",  "Prunes, stewed",  "Sweet potato, baked in skin",  "Figs, dried",  "Pumpkin, canned",  "Potato, baked, with skin",  "Popcorn, air-popped",  "Almonds",  "Pears, dried",  "Whole wheat spaghetti, cooked",  "Parsnips, cooked",  "Sunflower seed kernels, dry roasted",  "Orange",  "Banana",  "Guava",  "Oat bran muffin",  "Pearled barley, cooked",  "Winter squash, cooked",  "Dates",  "Pistachios, dry roasted",  "Pecans, oil roasted",  "Hazelnuts or filberts",  "Peanuts, oil roasted",  "Whole wheat paratha bread",  "Quinoa, cooked",  ];
+let ironFoods = ["Beef", "Chicken liver", "Oyster", "Salmon", "Ham", "Halibut", "Turkey", "Tofu"]
 
-
-let nutritionCategories = ["Protein", "Potassium", "Vitamin D", "Calcium", "Iron", "Fiber"];
+let nutritionCategories = ["Potassium", "Vitamin A", "Vitamin C", "Vitamin D", "Calcium", "Iron", "Fiber"];
 
 
