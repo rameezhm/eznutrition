@@ -45,7 +45,7 @@
     </nav>
 
     <section class="section top-padder">
-        
+
     </section>
 
     <section id="ageSelector" class="section">
@@ -53,13 +53,13 @@
             <div class="content">
                 <h1>Please Select Your Age Group</h1>
             </div>
-            <button class="button">1-3</button>
-            <button class="button">4-8</button>
-            <button class="button">9-13</button>
-            <button class="button">14-18</button>
-            <button class="button">19-30</button>
-            <button class="button">31-50</button>
-            <button class="button">51+</button>
+            <button onclick="getAge(1)" class="button">1-3</button>
+            <button onclick="getAge(4)" class="button">4-8</button>
+            <button onclick="getAge(9)" class="button">9-13</button>
+            <button onclick="getAge(14)" class="button">14-18</button>
+            <button onclick="getAge(19)" class="button">19-30</button>
+            <button onclick="getAge(31)" class="button">31-50</button>
+            <button onclick="getAge(51)" class="button">51+</button>
         </div>
     </section>
 
@@ -68,54 +68,10 @@
             <div class="content">
                 <h1>Please Select Your Gender</h1>
             </div>
-            <button class="button">Male</button>
-            <button class="button">Female</button>
+            <button onclick="getGender('male')" class="button">Male</button>
+            <button onclick="getGender('female')" class="button">Female</button>
         </div>
     </section>
-
-    <!--
-
-    <section id="genderSelector" class="section">
-        <div class="container">
-            <div id="gender-selector" class="columns is-gapless is-mobile is-centered">
-                <div id="maleSelection" class="column is-one-quarter has-background-dark male-selection"
-                    onclick="mClick()">
-                    <i id="maleIcon" class="fas fa-male"></i>
-                </div>
-                <div id="femaleSelection" class="column is-one-quarter has-background-light female-selection"
-                    onclick="fClick()">
-                    <i id="femaleIcon" class="fas fa-female"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ageForm" class="section age-form">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-one-third has-text-centered">
-                    <div class="content">
-                        <h1>Enter Your Age</h1>
-                        <div id="ageError" class="age-error has-text-danger">Error: Invalid Age. Please Re-enter a valid age</div>
-                    </div>
-                    <div class="columns is-gapless is-mobile is-centered">
-                        <div class="column is-one-third">
-                            <div class="field has-addons">
-                                <div class="control">
-                                    <input id="ageInput" class="input" type="text" placeholder="Age">
-                                </div>
-                                <div class="control">
-                                    <button id="ageButton" class="button is-link" onclick="getAge()">Go</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
--->
 
     <!-- NUTRITIONAL DATA -->
     <section id="dailyNutrition" class="section daily-nutrition nutrition">

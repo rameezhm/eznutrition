@@ -17,33 +17,32 @@ onresize = function() {
     resizeSelector();
 }
 
+//track if both demographic info have been entered
+let ageEntered = false;
+let genderEntered = false;
+
 //functions to handle gender select click
 //track selected gender
 let gender = "none";
-let mClick = function() {
-    gender = "male";
-    showAgeForm();
-}
-let fClick = function() {
-    gender = "female";
-    showAgeForm();
-}
-
-let showAgeForm = function() {
-    document.getElementById('ageForm').style.visibility = "visible";
+function getAge(g) {
+    gender = g;
+    console.log("Entered Gender " + g);
+    genderEntered = true;
+    checkBothDemoInputs();
 }
 
 //get users age
 let age = -1;
-let getAge = function() {
-    let ageInputElement = document.getElementById('ageInput');
-    let ageInput = Number(ageInputElement.value);
-    //make error visible if invalid input
-    if ( isNaN(ageInput) ) {
-        ageError.style.visibility = "visible";
-    } else {
-        ageError.style.visibility = "hidden";
-        age = ageInput;
+function getAge(a) {
+    age = a;
+    console.log("Entered Age " + a);
+    ageEntered = true;
+    checkBothDemoInputs();
+}
+
+//checks if both demographic info was entered upon either button click
+let checkBothDemoInputs = function() {
+    if (genderEntered && ageEntered) {
         presentData();
     }
 }
