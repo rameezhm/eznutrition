@@ -16,7 +16,7 @@
 
 <body>
     <!--NAVBAR -->
-    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <!-- Insert Logo Below -->
             <a href="#">
@@ -44,13 +44,37 @@
         </div>
     </nav>
 
-    <section class="section">
-        <div class="content has-text-centered">
-            <h1>Enter Your Info</h1>
+    <section class="section top-padder">
+        
+    </section>
+
+    <section id="ageSelector" class="section">
+        <div class="container">
+            <div class="content">
+                <h1>Please Select Your Age Group</h1>
+            </div>
+            <button class="button">1-3</button>
+            <button class="button">4-8</button>
+            <button class="button">9-13</button>
+            <button class="button">14-18</button>
+            <button class="button">19-30</button>
+            <button class="button">31-50</button>
+            <button class="button">51+</button>
         </div>
     </section>
 
-    <!--GENDER SELECTION -->
+    <section id="genderSelector" class="section">
+        <div class="container">
+            <div class="content">
+                <h1>Please Select Your Gender</h1>
+            </div>
+            <button class="button">Male</button>
+            <button class="button">Female</button>
+        </div>
+    </section>
+
+    <!--
+
     <section id="genderSelector" class="section">
         <div class="container">
             <div id="gender-selector" class="columns is-gapless is-mobile is-centered">
@@ -66,7 +90,6 @@
         </div>
     </section>
 
-    <!-- AGE FORM -->
     <section id="ageForm" class="section age-form">
         <div class="container">
             <div class="columns is-centered">
@@ -92,6 +115,8 @@
         </div>
     </section>
 
+-->
+
     <!-- NUTRITIONAL DATA -->
     <section id="dailyNutrition" class="section daily-nutrition nutrition">
         <div class="container">
@@ -110,7 +135,7 @@
         </div>
     </section>
 
-
+    <!-- Potassium -->
     <section id="pSection" class="section potassium nutrition">
         <div class="container">
             <div class="columns is-centered">
