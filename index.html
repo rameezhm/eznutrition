@@ -125,10 +125,10 @@
                     <div class="content">
                         <h1>Your Daily Nutrition</h1>
                         <button onclick="window.location.href='#pSection'" class="button is-large is-fullwidth">Potassium</button>
-                        <button class="button is-large is-fullwidth">Protein</button>
-                        <button class="button is-large is-fullwidth">Vitamin D</button>
-                        <button class="button is-large is-fullwidth">Calcium</button>
-                        <button class="button is-large is-fullwidth">Fiber</button>
+                        <button onclick="window.location.href='#proteinSection'" class="button is-large is-fullwidth">Protein</button>
+                        <button onclick="window.location.href='#vitaminDSection'" class="button is-large is-fullwidth">Vitamin D</button>
+                        <button onclick="window.location.href='#calciumSection'" class="button is-large is-fullwidth">Calcium</button>
+                        <button onclick="window.location.href='#fiberSection'" class="button is-large is-fullwidth">Fiber</button>
                     </div>
                 </div>
             </div>
@@ -145,6 +145,57 @@
                         <h3 id="potassiumAmount"></h3>
                         <h2>Some Foods That Contain Lots of Potassium</h2>
                         <ul id="potassiumFoodList">
+                        </ul>
+                    </div>
+                    <button onclick="window.location.href='#dailyNutrition'" class="button is-normal">Back to Nutrients</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proteinSection" class="section protein nutrition">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h1>Your Daily Recomended Dose of Protein</h1>
+                        <h3 id="proteinAmount"></h3>
+                        <h2>Some Foods That Contain Lots of Protein</h2>
+                        <ul id="proteinFoodList">
+                        </ul>
+                    </div>
+                    <button onclick="window.location.href='#dailyNutrition'" class="button is-normal">Back to Nutrients</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vitaminDSection" class="section vitaminD nutrition">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h1>Your Daily Recomended Dose of Vitamin D</h1>
+                        <h3 id="vitaminDAmount"></h3>
+                        <h2>Some Foods That Contain Lots of Vitamin D</h2>
+                        <ul id="vitaminDFoodList">
+                        </ul>
+                    </div>
+                    <button onclick="window.location.href='#dailyNutrition'" class="button is-normal">Back to Nutrients</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fiberSection" class="section fiber nutrition">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h1>Your Daily Recomended Dose of fiber</h1>
+                        <h3 id="fiberAmount"></h3>
+                        <h2>Some Foods That Contain Lots of fiber</h2>
+                        <ul id="fiberFoodList">
                         </ul>
                     </div>
                     <button onclick="window.location.href='#dailyNutrition'" class="button is-normal">Back to Nutrients</button>
