@@ -1,0 +1,9 @@
+<i class="fas fa-carrot"></i>
+
+<i class="far fa-lemon"></i>
+
+<i class="far fa-sun"></i>
+
+<i class="fas fa-dumbbell"></i>
+
+<i class="fas fa-bone"></i>
