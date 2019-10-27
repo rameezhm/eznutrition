@@ -15,3 +15,12 @@ html {
 .nutrition {
     visibility: hidden;
 }
+
+#fiberSection {
+    visibility: hidden;
+}
+
+#ironSection {
+    visibility: hidden;
+}
+
