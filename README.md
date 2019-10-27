@@ -1,2 +1,2 @@
-#EZ Nutrition
+# EZ Nutrition
 Our health should be one of the top priorities in life, especially in this age where we are able to accomplish and have so many fulfilling experiences. In a world of constantly increasing information, it is easy to become overwhelmed with data and confused over many aspects of staying or even starting to be healthy. Therefore, we created this website to provide basic nutrition information in an easy to read format targeted for individuals based on age and biological sex. While this cannot be substituted for a comprehensive guide to perfect health, we present information on essential nutritition as well as corresponding food suggestions to meet the recommended intake from the (source).
