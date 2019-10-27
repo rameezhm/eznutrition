@@ -16,11 +16,30 @@ html {
     visibility: hidden;
 }
 
-#fiberSection {
+.fiber {
     visibility: hidden;
 }
 
-#ironSection {
+.iron {
     visibility: hidden;
 }
 
+.calcium {
+    visibility: hidden;
+}
+
+.potassium {
+    visibility: hidden;
+}
+
+.vitaminA {
+    visibility: hidden;
+}
+
+.vitaminC {
+    visibility: hidden;
+}
+
+.vitaminD {
+    visibility: hidden;
+}

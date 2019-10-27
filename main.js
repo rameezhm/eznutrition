@@ -73,15 +73,16 @@ let findGroup = function() {
 let group = -1;
 let presentData = function() {
     group = findGroup();
-    dailyNutrition.style.visibility = "visible";
     window.location.href='#dailyNutrition';
     populatePotassium();
-    populateProtein();
+    //populateProtein();
     populatevitaminD();
+    populatefiber();
 }
 
 let populatePotassium = function() {
     pSection.style.visibility = "visible";
+    potassiumNav.style.visibility = "visible";
     document.getElementById('potassiumAmount').innerHTML = potassium[group-1] + " mg";
     for ( let i = 0; i < potassiumFoods.length; i++) {
         document.getElementById('potassiumFoodList').innerHTML += "<li>" + potassiumFoods[i] + "</li>";
@@ -98,6 +99,7 @@ let populateProtein = function() {
 
 let populatevitaminD = function() {
     vitaminDSection.style.visibility = "visible";
+    vitaminDNav.style.visibility = "visible";
     document.getElementById('vitaminDAmount').innerHTML = vitaminD[group-1] + " g";
     for ( let i = 0; i < vitaminDFoods.length; i++) {
         document.getElementById('vitaminDFoodList').innerHTML += "<li>" + vitaminDFoods[i] + "</li>";
@@ -105,6 +107,7 @@ let populatevitaminD = function() {
 }
 
 let populatefiber = function() {
+    fiberNav.style.visibility = "visible";
     fiberSection.style.visibility = "visible";
     document.getElementById('fiberAmount').innerHTML = fiber[group-1] + " g";
     for ( let i = 0; i < fiberFoods.length; i++) {
