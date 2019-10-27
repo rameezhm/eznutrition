@@ -43,3 +43,10 @@ html {
 .vitaminD {
     visibility: hidden;
 }
+
+.nBlocks {
+    border: 1px solid;
+    border-radius: 4px;
+    padding-top: 2rem;
+    padding-bottom: 2rem; 
+}

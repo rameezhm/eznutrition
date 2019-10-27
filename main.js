@@ -81,19 +81,11 @@ let presentData = function() {
 }
 
 let populatePotassium = function() {
-    pSection.style.visibility = "visible";
+    potassiumSection.style.visibility = "visible";
     potassiumNav.style.visibility = "visible";
     document.getElementById('potassiumAmount').innerHTML = potassium[group-1] + " mg";
     for ( let i = 0; i < potassiumFoods.length; i++) {
         document.getElementById('potassiumFoodList').innerHTML += "<li>" + potassiumFoods[i] + "</li>";
-    }
-}
-
-let populateProtein = function() {
-    proteinSection.style.visibility = "visible";
-    document.getElementById('proteinAmount').innerHTML = protein[group-1] + " g";
-    for ( let i = 0; i < proteinFoods.length; i++) {
-        document.getElementById('proteinFoodList').innerHTML += "<li>" + proteinFoods[i] + "</li>";
     }
 }
 
